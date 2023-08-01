@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import './App.css';
+import "./App.css";
 import CardItem from "./components/card/Card";
 import LoadingCard from "./components/loading/Loading";
 import SearchInput from "./components/searchInput/Input";
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 import UserFill from "./types/usersFill";
 import { getMany } from "./service/user";
 
@@ -13,7 +13,7 @@ const App: React.FC = () => {
   const [filterUser, setFilterUser] = useState<UserFill[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadingSearch, setLoadingSearch] = useState(false);
-  let timer = null;
+  let timer;
 
   React.useEffect(() => {
     const fetchUsers = async () => {
@@ -52,17 +52,15 @@ const App: React.FC = () => {
   const handleSearch = (value: string) => {
     clearTimeout(timer);
 
-    timer = setTimeout(() => {
+     timer = setTimeout(() => {
       let filterDataUser = filterUser;
       if (value.toLowerCase()) {
-        filterDataUser = filterUser.filter(userData => 
-          userData.name?.toLowerCase().includes(value.toLowerCase()) || 
+        filterDataUser = filterUser.filter(userData =>
+          userData.name?.toLowerCase().includes(value.toLowerCase()) ||
           userData.company?.toLowerCase().includes(value.toLowerCase())
-        )
+        );
         setUserDatas(filterDataUser);
-        setLoadingSearch(false)
-        console.log(value, filterDataUser);
-        
+        setLoadingSearch(false);
       } else {
         setUserDatas(filterDataUser);
       }
@@ -81,7 +79,7 @@ return (<div>
     
     <main>
       <div className="main-container">
-        <Grid container spacing={8}>
+        <Grid container spacing={8} className="gridEffect">
             {
               loading || loadingSearch ? 
               <LoadingCard item={25}/>

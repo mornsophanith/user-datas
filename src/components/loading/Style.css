@@ -1,4 +1,10 @@
 /* loading effect start  */
+#productCategoryEffect .itemEffect {
+    margin-bottom: 50px;
+}
+#productCategoryEffect .gridEffect {
+    margin-bottom: 70px;
+}
 .card-loading .loading-wrapper .loading-effect-img {
     background: #ecebeb;
     border-radius: 4px;
@@ -7,11 +13,6 @@
 }
 .product.addon-box {
     width: 250px;
-}
-
-.main-item {
-    display: flex;
-    justify-content: space-between;
 }
 
 .item-effect:not(:last-child) {

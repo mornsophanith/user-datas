@@ -1,8 +1,8 @@
 import axios from "axios";
 import UserFill from "../types/usersFill";
 
-const url = 'https://api.github.com';
-const PER_PAGE = 5;
+const url = "https://api.github.com";
+const PER_PAGE = 25;
 
 export async function getMany(): Promise<UserFill[]> {
   try {

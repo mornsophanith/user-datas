@@ -1,14 +1,14 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import './Style.css'
+import { Grid } from "@mui/material";
+import "./Style.css";
 
 function LoadingCard(props) {
     return(
-        <div key={props.item} id='productCategoryEffect'>
-            <Row className="main-item">
-                {
+        <div id="productCategoryEffect">
+            <Grid container spacing={2} className="gridEffect">
+            {
                 [...Array(props.item)].map((e, key) => (
-                <Col xs={6} sm={6} md={6} xl={3} lg={4} className="item-effect">
+                <Grid item xs={3} sm={6} md={6} xl={3} lg={4} className="itemEffect" key={key}>
                     <div className="product addon-box">
                         <div className="pb-categorytab category-tab-right addon-tab">
                             <div id="product_list" className="product_list products-grid">
@@ -22,12 +22,10 @@ function LoadingCard(props) {
                             </div>
                         </div>
                     </div>
-                </Col>
+                </Grid>
                 ))
                 }
-            </Row>
-               
-                    
+            </Grid>
         </div>
         )
 }

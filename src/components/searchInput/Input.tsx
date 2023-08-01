@@ -1,5 +1,5 @@
 import React,{ChangeEvent} from "react";
-import './Style.css';
+import "./Style.css";
 import { validateInputNumber } from "../../helper/helpers";
 
 interface SearchInputProps {
