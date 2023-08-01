@@ -1,0 +1,28 @@
+.header-container {
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+    padding-inline: 24px;
+    background-color: var(--elements-color);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.theme-changer {
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+
+    .header-content p {
+        font-size: 12px;
+    }
+}

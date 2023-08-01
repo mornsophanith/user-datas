@@ -1,0 +1,34 @@
+.search-input {
+    margin: 20px 0;
+}  
+.search-container {
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.15);
+    max-width: 350px;
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 24px;
+    color: #999;
+    overflow: hidden;
+    background-color: var(--elements-color);
+    color: var(--text-color);
+}
+  
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 16px;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+}
+  
+.search-container input::placeholder {
+    color: #999;
+}
+
+@media(max-width: 768px) {
+    .search-filter-container {
+        flex-direction: column;
+    }
+    
+}

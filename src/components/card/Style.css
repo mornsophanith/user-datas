@@ -1,0 +1,123 @@
+.follower-following {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    padding: 0 12px;
+}
+  
+.pull-left p, .pull-right p {
+    margin-block: 2px;
+    margin-bottom: 0;
+}
+
+.pull-left, 
+.pull-right {
+    text-align: center;
+    line-height: 15px;
+    
+}
+
+.follower-following .follower-qauntity,
+.follower-following .following-qauntity {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+
+.follower-following .text{
+    font-weight: 600;
+    font-size: 10px;
+    color: #d1d1d1;
+    font-family: 'Oswald', sans-serif;
+}
+    
+.item-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid #5fae17;
+}
+  
+.item-card {
+    display: inline-block;
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 0;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    background-color: var(--elements-color);
+    text-align: center;
+    border: 2px solid white;
+}
+
+.img-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #5fae17;
+}
+
+.img-item  {
+    position: relative;
+    top: 40px;
+}
+
+.card-info {
+    margin-top: 45px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-info .title {
+    font-size: 24px;
+    margin-block: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-info .sub-title {
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.socail-media {
+    display: flex;
+    justify-content: center;
+}
+
+.socail-media .icon {
+    margin: 0;
+}
+
+.socail-media .icon {
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socail-media .facebook {
+    background: #4369ba;
+}
+
+.socail-media .twitter {
+    background: #1da0f8;
+}
+
+.socail-media .instagram {
+    background: #e43270;
+}
+
+.socail-media .youtube {
+    background: #f70400;
+}
